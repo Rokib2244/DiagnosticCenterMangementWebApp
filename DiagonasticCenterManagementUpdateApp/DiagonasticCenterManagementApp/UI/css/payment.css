@@ -1,0 +1,23 @@
+﻿.main-div {
+    margin: 5% auto;
+    width: 47%;
+}
+.form-group {
+    padding-bottom: 24px;
+}
+.search {
+    margin-top: 20px;
+}
+#billNoTextBox,#mobileNoTextBox{
+    display: inline-block;
+}
+.or{
+    position: absolute;
+    margin-left: 34px;
+}
+#searchButton,#payButton{
+    float: right;
+}
+.payment-info-div {
+    margin-top: 32px;
+}

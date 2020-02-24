@@ -1,0 +1,8 @@
+﻿.main-div {
+    width: 50%;
+    margin: 6% auto;   
+}
+.test-input-field div.form-group {
+    padding-bottom: 30px;
+    width: 90%;
+}

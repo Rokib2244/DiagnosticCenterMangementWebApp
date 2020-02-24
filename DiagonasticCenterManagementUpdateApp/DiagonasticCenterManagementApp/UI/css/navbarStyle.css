@@ -1,0 +1,35 @@
+﻿div.title {
+    /*background-color: rgb(47, 48, 51);*/
+    background-color: lemonchiffon;
+    
+}
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.title a:hover {
+    background-color: #248cc8;
+    color: white;
+    text-decoration: none;
+}
+.title a {
+    color: black;
+    padding: 2% 3%;
+    font-weight: bold;
+    position: relative;
+}
+.nav-setup {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    top: 65px;
+    left: 22px;
+    padding-left: 0px;
+    text-align: center;
+    display: none;
+}
+.nav-setup li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}

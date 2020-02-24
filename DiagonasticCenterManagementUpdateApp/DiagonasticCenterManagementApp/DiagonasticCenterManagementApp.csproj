@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D011D15E-1FE0-410A-88B3-5AF30B695218}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiagonasticCenterManagementApp</RootNamespace>
+    <AssemblyName>DiagonasticCenterManagementApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="UI\css\bootstrap-datepicker.min.css" />
+    <Content Include="UI\css\bootstrap.min.css" />
+    <Content Include="UI\css\home.css" />
+    <Content Include="UI\css\navbarStyle.css" />
+    <Content Include="UI\css\payment.css" />
+    <Content Include="UI\css\requestEntry.css" />
+    <Content Include="UI\css\test.css" />
+    <Content Include="UI\css\testType.css" />
+    <Content Include="UI\css\testWiseReport.css" />
+    <Content Include="UI\font\font-awesome.min.css" />
+    <Content Include="UI\Home.aspx" />
+    <Content Include="UI\js\bootstrap-datepicker.js" />
+    <Content Include="UI\js\bootstrap-datepicker.min.js" />
+    <Content Include="UI\js\bootstrap.min.js" />
+    <Content Include="UI\js\createPdfForEntryUI.js" />
+    <Content Include="UI\js\hideSaveButton.js" />
+    <Content Include="UI\js\html2canvas.min.js" />
+    <Content Include="UI\js\jquery.min.js" />
+    <Content Include="UI\js\jspdf.min.js" />
+    <Content Include="UI\js\paymentValidation.js" />
+    <Content Include="UI\js\script.js" />
+    <Content Include="UI\js\testEntryFormValidation.js" />
+    <Content Include="UI\js\typeWiseReportValidation.js" />
+    <Content Include="UI\partials\navbar.htm" />
+    <Content Include="UI\Report\TestWise.aspx" />
+    <Content Include="UI\Report\TypeWise.aspx" />
+    <Content Include="UI\Report\UnpaidBill.aspx" />
+    <Content Include="UI\Setup\Test.aspx" />
+    <Content Include="UI\Setup\TestType.aspx" />
+    <Content Include="UI\TestRequest\EntryUI.aspx" />
+    <Content Include="UI\TestRequest\Payment.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BillManager.cs" />
+    <Compile Include="BLL\RequestEntryManager.cs" />
+    <Compile Include="BLL\TestNameManager.cs" />
+    <Compile Include="BLL\TestTypeManager.cs" />
+    <Compile Include="BLL\TestWiseReportManager.cs" />
+    <Compile Include="BLL\TypeWiseReportManager.cs" />
+    <Compile Include="DAL\Gateway\BillGateway.cs" />
+    <Compile Include="DAL\Gateway\ParentGateway.cs" />
+    <Compile Include="DAL\Gateway\RequestEntryGateway.cs" />
+    <Compile Include="DAL\Gateway\TestNameGateway.cs" />
+    <Compile Include="DAL\Gateway\TestTypeGateway.cs" />
+    <Compile Include="DAL\Gateway\TestWiseReportGateway.cs" />
+    <Compile Include="DAL\Gateway\TypeWiseReportGateway.cs" />
+    <Compile Include="DAL\Model\Patient.cs" />
+    <Compile Include="DAL\Model\TestName.cs" />
+    <Compile Include="DAL\Model\TestTypes.cs" />
+    <Compile Include="DAL\Model\View\TestNamesWithType.cs" />
+    <Compile Include="DAL\Model\View\TestWiseVM.cs" />
+    <Compile Include="DAL\Model\View\TypeWiseVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\TestWise.aspx.cs">
+      <DependentUpon>TestWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Report\TestWise.aspx.designer.cs">
+      <DependentUpon>TestWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\TypeWise.aspx.cs">
+      <DependentUpon>TypeWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Report\TypeWise.aspx.designer.cs">
+      <DependentUpon>TypeWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\UnpaidBill.aspx.cs">
+      <DependentUpon>UnpaidBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Report\UnpaidBill.aspx.designer.cs">
+      <DependentUpon>UnpaidBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Setup\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Setup\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Setup\TestType.aspx.cs">
+      <DependentUpon>TestType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Setup\TestType.aspx.designer.cs">
+      <DependentUpon>TestType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestRequest\EntryUI.aspx.cs">
+      <DependentUpon>EntryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TestRequest\EntryUI.aspx.designer.cs">
+      <DependentUpon>EntryUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestRequest\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TestRequest\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3894</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3894/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+﻿.h2{
+    color: white;
+    margin-bottom: 7%;
+    padding-top: 10%;
+}
+.home-page {
+    background-color: cadetblue;
+    text-align: center;
+    border-radius: 15px;
+}
+.list-inline>li {
+    padding: 0.8% 3%;
+}
+.setup,.test-request,.report{
+    position: relative;
+}
+/*.another-page-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    margin-bottom: 2%;
+}*/
+.setup-ul {
+    position: absolute;
+    width: 100%;
+    top: 102%;
+    left: 0%;
+   
+}
+.setup-ul li{
+    display: block;
+}
+.setup-ul li a {
+    padding: 8% 15%;
+    text-decoration: none;
+    color: black;
+}
+.setup-ul li a:hover {
+    color: black;
+}
+.test-request ul li a {
+    padding-left: 38%;
+    padding-right: 31%;
+}
+.header-item ul {
+    display: none;
+}
+
+
+
+
+
+
+

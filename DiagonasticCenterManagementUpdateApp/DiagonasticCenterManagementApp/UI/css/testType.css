@@ -1,0 +1,88 @@
+﻿#saveButton {
+    text-align: center;
+}
+.test-type {
+    position: relative;
+    background-color: cadetblue;
+    border-radius: 15px;
+    width: 60%;
+    margin: 5% auto;
+    border: 1px solid black;
+    min-height: 250px;
+    color: white;
+}
+.h4 {
+    text-align: center;
+    font-weight: bold;
+}
+.type-name {
+    position: relative;
+    min-height: 127px;
+    top: 37px;
+    left: -10%;
+
+}
+#form1 {
+    position: absolute;
+    top: 10%;
+    left: 41%;
+
+}
+#typeNameTextBox {
+    width: 53%;
+    margin: 5% auto;
+    margin-left: 10px;
+}
+#saveButton {
+    position: absolute;
+    right: 16%;
+}
+.grid-view {
+    margin-top: 10px;
+}
+.main-div {
+    display: block;
+
+    margin: 5% auto;
+    /*height: 100%;*/
+    width: 80%;
+    /*background-color: blue;*/
+    overflow: auto;
+}
+.text-input-div {
+    /*height: 100px;*/
+    /*background-color: red;*/
+    overflow: auto;
+    position: relative
+}
+.test-type-div {
+    /*height: 100px;*/
+    /*background-color: yellow;*/
+    overflow: auto;
+}
+.form-group {
+    margin-left: 30%;
+}
+#saveButton {
+    right: 25%;
+    bottom: 0%
+}
+.status-label{
+    text-align: center;
+    color: white;
+}
+.show-all-type th{
+    text-align: center;
+}
+.redLabel {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}
+.greenLabel {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+}

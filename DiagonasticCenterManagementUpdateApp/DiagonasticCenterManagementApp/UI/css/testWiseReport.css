@@ -1,0 +1,41 @@
+﻿.main-div {
+    margin: 5% auto;
+    width: 47%;
+}
+.form-group {
+    padding-bottom: 24px;
+}
+.search {
+    margin-top: 20px;
+    float: right;
+}
+/*label.error {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}*/
+#messageLabel.redLabel{
+    color:red !important;
+    font-weight:bold !important;
+    font-style:italic !important;
+    font-size:15px !important;
+}
+.table.show-all-test{
+    text-align:center;
+}
+.show-all-test>tbody>tr th{
+   text-align:center;
+}
+#totalDiv{
+    width:35%;
+    float:right;
+}
+#totalLabel{
+    margin-top:7px;
+}
+#totalTextBox{
+    width: 72%;
+    float: right;
+    text-align: center;
+    margin-right: 25px;
+}
